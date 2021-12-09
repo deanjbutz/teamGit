@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import TicketMasterResults from './child-components/TicketMasterResults'
 import { Button } from 'reactstrap';
+import './ticketMaster.css'
 
 const TicketMaster = () => {
 
@@ -48,8 +49,8 @@ const TicketMaster = () => {
     return (
         <div id="ticketmaster" className="ticketmaster">
             <div className="ticketmaster-submit">
-                <h3>Events near your location: </h3>
-                <Button onClick={handleSubmit}>View Events</Button>
+                <h1>Events near your location: </h1>
+                <Button id="tm-button1" onClick={handleSubmit}>View Events</Button>
             </div>
             {/* <TicketMasterResults results={results} changePageNumber={changePageNumber}/> */}
             {

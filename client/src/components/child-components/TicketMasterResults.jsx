@@ -10,8 +10,8 @@ const TicketMasterResults = (props) => {
     return (
         <div>
             <div className="page-buttons">
-                <Button onClick={(e) => props.changePageNumber(e, 'down')}>Previous 10</Button>
-                <Button onClick={(e) => props.changePageNumber(e, 'up')}>Next 10</Button>
+                <Button onClick={(e) => props.changePageNumber(e, 'down')} id="tm-button2">Previous 10</Button>
+                <Button onClick={(e) => props.changePageNumber(e, 'up')} id="tm-button3">Next 10</Button>
             </div>
             <div className="tm">
                 {props.results.map(result => {

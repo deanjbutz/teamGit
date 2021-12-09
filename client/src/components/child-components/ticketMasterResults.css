@@ -15,7 +15,7 @@
 
 .page-buttons {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -24,7 +24,7 @@
 .tm {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 5px;
     padding-left: 20px;
 }
@@ -32,6 +32,7 @@
 .card {
     width: 250px;
     height: 250px;
+    background-color: rgb(237, 3, 245);
 }
 
 .cardImages {
