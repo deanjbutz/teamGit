@@ -1,0 +1,49 @@
+.ticketmaster {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.ticketmaster-submit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.page-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.tm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+}
+
+.cardImages {
+    height: 150px;
+    width: 205px;
+}
+
+.text-center {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+
+}
