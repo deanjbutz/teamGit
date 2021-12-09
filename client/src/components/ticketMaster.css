@@ -1,0 +1,26 @@
+#ticketmaster {
+    border: 3px solid black;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#ticketmaster h1 {
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(237, 3, 245);
+}
+
+#tm-button1, #tm-button2, #tm-button3 {
+    background-color: rgb(237, 3, 245);
+    border: 2px solid black;
+}
+
+.ticketmaster-submit {
+    padding-top: 5px;
+    align-self: center;
+}
+
+
+#tm-button1:hover, #tm-button2:hover, #tm-button3:hover {
+    background-color: #16e0bd;
+    color: black;
+}

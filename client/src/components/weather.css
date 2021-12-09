@@ -1,0 +1,26 @@
+#tempBtn {
+    background-color: #ed03f5;
+    border: 2px solid black;
+}
+
+#tempBtn:hover {
+    background-color: #16e0bd;
+    color: black;
+}
+
+#showBtn {
+    background-color: #ed03f5;
+}
+
+#weather {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#weather h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(237, 3, 245);
+}
