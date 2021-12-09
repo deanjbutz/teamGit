@@ -1,39 +1,42 @@
-import './App.css';
-import React, { Component } from "react";
-import { render } from "react-dom";
+import React, { useState } from 'react';
+import Nasa from './components/Nasa';
+import Weather from './components/Weather';
+import TicketMaster from './components/TicketMaster';
+import 'bootstrap/dist/css/bootstrap.css'
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
+const App = () => {
+  const [lat, setLat] = useState(null);
+  const [lng, setLng] = useState(null);
+  const [status, setStatus] = useState(null);
 
-  componentDidMount() {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      console.log("Latitude is :", position.coords.latitude);
-      console.log("Longitude is :", position.coords.longitude);
+
+
+  const getLocation = () => {
+
+    navigator.geolocation.getCurrentPosition((position) => {
+
+      localStorage.setItem('lat', position.coords.latitude);
+      setLat(position.coords.latitude)
+      localStorage.setItem('lng', position.coords.longitude);
+      setLng(position.coords.longitude)
+    }, () => {
+      setStatus('Unable to retrieve your location');
     });
   }
-
-  render() {
-    return (
-      <div>
-        <h4>Using geolocation JavaScript API in React</h4>
-      </div>
-    );
-  }
-}
-
-render(<App />, document.getElementById("root"));
-
-
-/*function App() {
+  getLocation();
   return (
-    <div className='App'>
-      24Hour
+    <div className="container">
+      <div className='nasa-weather'>
+
+        <Nasa />
+        <Weather />
+        <TicketMaster />
+      </div>
     </div>
   );
 }
-*/
+
+
+
+
 export default App;
